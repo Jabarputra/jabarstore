@@ -59,7 +59,7 @@ LOGO() {
 # ===================
 clear
   # // Exporint IP AddressInformation
-export IP=$( curl -sS icanhazip.com )
+export IP=$(wget -qO- ipinfo.io/ip)
 
 # // Clear Data
 clear
@@ -121,7 +121,7 @@ NC='\e[0m'
 # ═══════════════
 # // Allow Access
 # ═══════════════
-MYIP=$(curl -sS ipv4.icanhazip.com)
+MYIP=$(wget -qO- ipinfo.io/ip)
 echo -e "\e[32mloading...\e[0m"
 clear
 # Valid Script
