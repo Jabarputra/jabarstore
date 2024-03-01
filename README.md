@@ -1,4 +1,4 @@
 # jabarstore
-apt update -y && apt upgrade -y && apt dist-upgrade -y
+apt update -y && apt upgrade -y && apt dist-upgrade -y && reboot
 #
 wget -qO- https://raw.githubusercontent.com/Jabarputra/jabarstore/main/run.sh
