@@ -131,7 +131,7 @@ data_ip="https://raw.githubusercontent.com/Jabarputra/jabarstore/main/izin/ip"
 use=$(wget -qO- $data_ip | grep $ipsaya | awk '{print $2}')
 checking_sc() {
   useexp=$(wget -qO- $data_ip | grep $ipsaya | awk '{print $3}')
-  if [[ $(date -d "$date_list" +%s) -lt $(date -d "$useexp" +%s) ]]; then
+  if [[ $(date -d "$data_server" +%s) -lt $(date -d "$useexp" +%s) ]]; then
     echo -ne
   else
     echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
